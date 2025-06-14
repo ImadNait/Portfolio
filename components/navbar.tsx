@@ -68,7 +68,7 @@ export function Navbar() {
             <span className="sr-only">Toggle theme</span>
           </Button>
           <Button className="btn-hover" asChild>
-            <a href="/resume.pdf" download="public/Imad Resume.pdf">
+            <a href="public/Imad Resume.pdf" download="Imad-Resume.pdf">
               Resume
             </a>
           </Button>
