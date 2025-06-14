@@ -37,7 +37,7 @@ export function Navbar() {
     >
       <div className="container flex items-center justify-between h-16 px-4 mx-auto">
         <Link href="#home" className="text-xl font-bold transition-colors hover:text-primary">
-          Portfolio
+          ImadNait
         </Link>
 
         {/* Desktop Navigation */}
