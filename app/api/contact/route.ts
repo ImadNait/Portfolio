@@ -12,18 +12,15 @@ export async function POST(request: NextRequest) {
 
     // Check if environment variables are set
     if (!process.env.EMAIL_USER || !process.env.EMAIL_PASS) {
-      console.error("Missing email credentials:", {
-        EMAIL_USER: process.env.EMAIL_USER ? "Set" : "Missing",
-        EMAIL_PASS: process.env.EMAIL_PASS ? "Set" : "Missing",
-      })
+      console.error("Missing email credentials")
       return NextResponse.json({ error: "Email service not configured" }, { status: 500 })
     }
 
-    // Create transporter with explicit configuration
+    // Create transporter
     const transporter = nodemailer.createTransport({
       host: "smtp.gmail.com",
       port: 587,
-      secure: false, // true for 465, false for other ports
+      secure: false,
       auth: {
         user: process.env.EMAIL_USER,
         pass: process.env.EMAIL_PASS,
@@ -32,15 +29,6 @@ export async function POST(request: NextRequest) {
         rejectUnauthorized: false,
       },
     })
-
-    // Verify connection configuration
-    try {
-      await transporter.verify()
-      console.log("SMTP connection verified successfully")
-    } catch (verifyError) {
-      console.error("SMTP verification failed:", verifyError)
-      return NextResponse.json({ error: "Email service configuration error" }, { status: 500 })
-    }
 
     // Email content
     const mailOptions = {
