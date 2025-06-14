@@ -128,7 +128,7 @@ export function Navbar() {
         </Link>
       ))}
       <Button size="lg" className="btn-hover" asChild>
-        <a href="/resume.pdf" download="Imad_Nait_Mihoub_Resume.pdf">
+        <a href="/Imad Resume.pdf" download="Imad_Nait_Mihoub_Resume.pdf">
           Resume
         </a>
       </Button>
