@@ -95,34 +95,47 @@ export function Navbar() {
         </div>
       </div>
 
-      {isOpen && (
-        <div className="fixed inset-0 z-40 flex md:hidden bg-background mobile-menu-enter">
-          <nav className="flex flex-col items-center justify-center w-full h-full space-y-8">
-            {navItems.map((item, index) => (
-              <Link
-                key={item.name}
-                href={item.href}
-                className="text-xl font-medium transition-colors hover:text-primary"
-                style={{ animationDelay: `${index * 0.1}s` }}
-                onClick={(e) => {
-                  e.preventDefault()
-                  document.querySelector(item.href)?.scrollIntoView({
-                    behavior: "smooth",
-                  })
-                  setIsOpen(false)
-                }}
-              >
-                {item.name}
-              </Link>
-            ))}
-            <Button size="lg" className="btn-hover" asChild>
-              <a href="/resume.pdf" download="Imad_Nait_Mihoub_Resume.pdf">
-                Resume
-              </a>
-            </Button>
-          </nav>
-        </div>
-      )}
+{isOpen && (
+  <div className="fixed inset-0 z-40 flex flex-col md:hidden bg-background mobile-menu-enter">
+    {/* X button */}
+    <div className="flex justify-end p-4">
+      <button
+        className="text-2xl font-bold"
+        onClick={() => setIsOpen(false)}
+        aria-label="Close menu"
+      >
+        ×
+      </button>
+    </div>
+
+    {/* Menu Items */}
+    <nav className="flex flex-col items-center justify-center flex-1 space-y-8">
+      {navItems.map((item, index) => (
+        <Link
+          key={item.name}
+          href={item.href}
+          className="text-xl font-medium transition-colors hover:text-primary"
+          style={{ animationDelay: `${index * 0.1}s` }}
+          onClick={(e) => {
+            e.preventDefault()
+            document.querySelector(item.href)?.scrollIntoView({
+              behavior: "smooth",
+            })
+            setIsOpen(false)
+          }}
+        >
+          {item.name}
+        </Link>
+      ))}
+      <Button size="lg" className="btn-hover" asChild>
+        <a href="/resume.pdf" download="Imad_Nait_Mihoub_Resume.pdf">
+          Resume
+        </a>
+      </Button>
+    </nav>
+  </div>
+)}
+
     </header>
   )
 }
