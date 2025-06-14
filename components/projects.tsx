@@ -22,14 +22,14 @@ export function Projects() {
       title: "Webhooks Manager",
       description: "A service that captures, processes, forwards webhook events and supports event logging, email/SMS notifications, and Stripe webhooks.",
       tags: ["NestJS", "ExpressJS","MongoDB", "Stripe"],
-      githubUrl: "#",
+      githubUrl: "https://github.com/ImadNait/Webhooks-Manager",
       status: "completed",
     },
     {
       title: "Chatting App",
       description: "A chat application using React and Socket.io for real-time messaging. Built with a Node.js backend to handle live communication.",
       tags: ["React", "TypeScript", "NodeJS", "Socket.io"],
-      githubUrl: "#",
+      githubUrl: "https://github.com/ImadNait/Chatting-App",
       status: "completed",
     },
     {
@@ -43,14 +43,14 @@ export function Projects() {
       title: "Image Compressor",
       description: "A mini project of an images compressor (size-reducer)",
       tags: ["Bun", "ExpressJS", "Sharp"],
-      githubUrl: "#",
+      githubUrl: "https://github.com/ImadNait/Image-Compressor",
       status: "completed",
     },
     {
       title: "URL shortener",
       description: "A mini project of URL shortener, you enter a URL and it makes it shorter for you.",
       tags: ["Bun", "ElysiaJS", "MongoDB"],
-      githubUrl: "#",
+      githubUrl: "https://github.com/ImadNait/URL-Shortener",
       status: "completed",
     },
     {
