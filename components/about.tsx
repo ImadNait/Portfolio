@@ -42,7 +42,7 @@ export function About() {
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">About Me</h2>
           <div className="w-20 h-1 mx-auto my-4 bg-primary"></div>
           <p className="mt-4 text-lg text-muted-foreground">
-            I'm a computer science student and junior web developer specialized in back-end development. As a dedicated web developer, I thrive on creating efficient, scalable, and robust server-side solutions. My specialization in backend technologies has allowed me to dive deep into the intricacies of servers, databases, and APIs, and I relish every moment of it.
+            I'm a computer science student and junior web developer specialized in back-end development. As a dedicated web developer, I thrive on creating efficient, scalable, and robust server-side solutions.
           </p>
           <p className="mt-4 text-lg text-muted-foreground">
             I also enjoy problem-solving and programming, and I'm always eager to tackle new challenges. Whether it's debugging a tricky issue or coming up with an innovative solution, I find immense satisfaction in overcoming obstacles through code.
