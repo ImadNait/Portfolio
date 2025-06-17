@@ -10,7 +10,7 @@ export function About() {
       icon: <Server className="w-10 h-10 text-primary" />,
       title: "Backend Development",
       description:
-        "Building robust APIs, microservices, and server-side applications with Node.js, Express, and NestJS.",
+        "Building robust APIs, microservices, and server-side applications with Node.js, Express, NestJS, and Django.",
     },
     {
       icon: <Database className="w-10 h-10 text-primary" />,
