@@ -47,10 +47,10 @@ export function Projects() {
       status: "completed",
     },
     {
-      title: "URL shortener",
-      description: "A mini project of URL shortener, you enter a URL and it makes it shorter for you.",
+      title: "Mini Book Shelf",
+      description: "A small full-stack application where users can manage a personal collection of books.",
       tags: ["Bun", "ElysiaJS", "MongoDB"],
-      githubUrl: "https://github.com/ImadNait/URL-Shortener",
+      githubUrl: "https://github.com/ImadNait/Mini-Book-Shelf",
       status: "completed",
     },
     {
