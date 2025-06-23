@@ -36,11 +36,9 @@ export function Navbar() {
       )}
     >
       <div className="container flex items-center justify-between h-16 px-4 mx-auto">
-        <Link href="#home" className="text-xl font-bold transition-colors hover:text-primary">
+        <Link href="/" className="text-xl font-bold transition-colors hover:text-primary">
           ImadNait
         </Link>
-
-        {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-6">
           {navItems.map((item) => (
             <Link
@@ -74,7 +72,6 @@ export function Navbar() {
           </Button>
         </nav>
 
-        {/* Mobile Navigation Toggle */}
         <div className="flex items-center gap-2 md:hidden">
           <Button variant="ghost" size="icon" onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
             <SunIcon className="h-5 w-5 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
@@ -97,7 +94,6 @@ export function Navbar() {
 
 {isOpen && (
   <div className="fixed inset-0 z-40 flex flex-col md:hidden bg-background mobile-menu-enter">
-    {/* X button */}
     <div className="flex justify-end p-4">
       <button
         className="text-2xl font-bold"
@@ -108,7 +104,6 @@ export function Navbar() {
       </button>
     </div>
 
-    {/* Menu Items */}
     <nav className="flex flex-col items-center justify-center flex-1 space-y-8">
       {navItems.map((item, index) => (
         <Link
