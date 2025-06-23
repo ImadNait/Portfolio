@@ -49,7 +49,7 @@ export function Projects() {
     {
       title: "Mini Book Shelf",
       description: "A small full-stack application where users can manage a personal collection of books.",
-      tags: ["Bun", "ElysiaJS", "MongoDB"],
+      tags: ["React", "Tailwind", "NestJS", "TypeORM", "PostgreSQL"],
       githubUrl: "https://github.com/ImadNait/Mini-Book-Shelf",
       status: "completed",
     },
