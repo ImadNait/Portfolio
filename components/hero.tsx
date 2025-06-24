@@ -98,12 +98,6 @@ export function Hero() {
               transition={{ duration: 0.5, delay: 0.4 }}
               className="flex flex-wrap justify-center lg:justify-start gap-4"
             >
-              <Button size="lg" className="btn-hover" asChild>
-                <a href="#contact">Get in touch</a>
-              </Button>
-              <Button size="lg" variant="outline" className="btn-hover" asChild>
-                <a href="#projects">View my work</a>
-              </Button>
             </motion.div>
           </div>
         </div>
