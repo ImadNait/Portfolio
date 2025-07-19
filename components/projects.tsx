@@ -54,7 +54,7 @@ export function Projects() {
       status: "completed",
     },
     {
-      title: "Pictionary game",
+      title: "Guess.io",
       description: "A real-time multiplayer drawing and guessing game where players take turns sketching words while others try to guess them correctly before time runs out.",
       tags: ["NextJS", "TailwindCSS", "NestJS", "Socket.io", "Redis"],
       githubUrl: "#",
