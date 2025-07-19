@@ -35,7 +35,7 @@ export function Projects() {
     {
       title: "Multi-Tenant task manager",
       description: "A platform where organizations manage tasks in isolated environments with secure user access and tenant-level permissions.",
-      tags: ["Django", "HTML", "PostgreSQL"],
+      tags: ["Django", "NextJS", "PostgreSQL"],
       githubUrl: "#",
       status: "in-progress",
     },
@@ -56,7 +56,7 @@ export function Projects() {
     {
       title: "Pictionary game",
       description: "A real-time multiplayer drawing and guessing game where players take turns sketching words while others try to guess them correctly before time runs out.",
-      tags: ["NextJS", "ExpressJS", "Socket.io", "MongoDB"],
+      tags: ["NextJS", "TailwindCSS", "NestJS", "Socket.io", "Redis"],
       githubUrl: "#",
       status: "in-progress",
     },
