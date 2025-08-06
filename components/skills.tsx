@@ -13,7 +13,7 @@ export function Skills() {
   const skills: Skill[] = [
     { name: "HTML5", icon: "/icons/html5.svg" },
     { name: "CSS3", icon: "/icons/css3.svg" },    
-    { name: "Sass", icon: "/icons/sass.svg" },
+    { name: "Tailwind", icon: "/icons/tailwind.svg" },
     { name: "JavaScript", icon: "/icons/javascript.svg" },
     { name: "TypeScript", icon: "/icons/typescript.svg" },
     { name: "React", icon: "/icons/react.svg" },
@@ -96,7 +96,6 @@ function SkillIcon({ skill, index }: { skill: Skill; index: number }) {
     >
 
       <div ref={iconRef} className="flex flex-col items-center floating-icon">
-        {/* Icon card */}
         <div className="relative flex items-center justify-center w-20 h-20 p-3 mb-3 overflow-hidden transition-all duration-300 rounded-lg bg-card hover:bg-card/80 hover:shadow-lg hover:shadow-primary/20 group">
           <div className="relative w-full h-full">
             <img
